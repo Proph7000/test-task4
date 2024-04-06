@@ -11,7 +11,6 @@
 body {
   font-family: Arial, sans-serif;
   color: #fff;
-  overflow-y: hidden;
 }
 
 .container {
@@ -473,6 +472,10 @@ body {
 }
 
 @media (min-width: 1028px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .header {
     display: none;
   }
@@ -530,7 +533,9 @@ body {
   }
 
   .banner-section__img-1--desktop {
-    width: 93%;
+    width: 100%;
+    max-width: 50vh;
+    margin: 0 auto;
     display: block;
     position: initial;
     transform: initial;
@@ -642,6 +647,11 @@ body {
     height: 100vh;
     padding-top: 170px;
     flex: 1;
+  }
+
+  .section--3 {
+    padding-top: 13vh;
+    overflow: hidden;
   }
 
   .desktop-nav--section {

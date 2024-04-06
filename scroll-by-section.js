@@ -75,3 +75,16 @@ window.addEventListener('keydown', handleKeyDown);
 footerButton.addEventListener('click', () =>
   scrollToSection(currentSectionIndex + 1)
 );
+
+function checkWindowSize() {
+  if (window.innerWidth < 1028) {
+    window.removeEventListener('wheel', handleWheel);
+    window.removeEventListener('keydown', handleKeyDown);
+  } else {
+    window.addEventListener('wheel', handleWheel, { passive: false });
+    window.addEventListener('keydown', handleKeyDown);
+  }
+}
+
+checkWindowSize();
+window.addEventListener('resize', checkWindowSize);
