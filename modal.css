@@ -1,0 +1,36 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #0000009f;
+}
+
+.modal--block {
+  display: block;
+}
+
+.modal__paper {
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 20px;
+
+  background-color: #fff;
+  border-radius: 9px;
+}
+
+.modal__button--ok {
+  background-color: #2e2eaf;
+}
+
+.modal__button--close {
+  background-color: #8e8e8e;
+}
