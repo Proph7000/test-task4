@@ -645,19 +645,19 @@ body {
   .section--2,
   .section--3 {
     height: 100vh;
-    padding-top: 170px;
-    flex: 1;
-  }
-
-  .section--3 {
     padding-top: 13vh;
     overflow: hidden;
+    flex: 1;
   }
 
   .desktop-nav--section {
     position: absolute;
     left: 0;
     right: 0;
+  }
+
+  .desktop-nav__logo {
+    margin-left: 48px;
   }
 
   .section__container {
