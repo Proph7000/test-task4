@@ -1,4 +1,4 @@
-# Test task (copy of [site]https://www.queopinas.com/)
+# Test task - copy of [site](https://www.queopinas.com/)
 
 # Technologies used:
 
